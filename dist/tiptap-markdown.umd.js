@@ -620,6 +620,7 @@ ${element.innerHTML}
       return {
         markdown: {
           serialize(state2, node) {
+            state2.text(node.text);
           },
           parse: {
             // handled by markdown-it

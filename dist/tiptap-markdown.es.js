@@ -622,6 +622,7 @@ const Text$1 = Text.extend({
     return {
       markdown: {
         serialize(state, node) {
+          state.text(node.text);
         },
         parse: {
           // handled by markdown-it
